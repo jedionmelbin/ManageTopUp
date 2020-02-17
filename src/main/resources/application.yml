@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ManageTopUp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tdp_top_up
+    username: postgres
+    password: admin123*
+
+server:
+  port: 8089
+
+
+mybatis:
+  mapper-locations: classpath*:/mybatis/*.xml # Tells mybatis to look in resources/mybatis for XML mappers
+  type-aliases-package: com.tdp.api.topup # Tells mybatis to look for our Client class in the right package
